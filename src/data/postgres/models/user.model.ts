@@ -42,6 +42,12 @@ export class User extends BaseEntity {
   })
   balance: number;
 
+  @Column('boolean', {
+    nullable: false,
+    default: false,
+  })
+  status: boolean;
+
   @Column('timestamp', {
     default: () => 'CURRENT_TIMESTAMP',
     nullable: false,

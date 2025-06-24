@@ -13,4 +13,9 @@ export const envs = {
 
   JWT_KEY: get('JWT_KEY').required().asString(),
   JWT_EXPIRE_IN: get('JWT_EXPIRE_IN').default('3h').asString(),
+
+  MAILER_SERVICE: get('MAILER_SERVICE').required().asString(),
+  MAILER_EMAIL: get('MAILER_EMAIL').required().asString(),
+  MAILER_SECRET_KEY: get('MAILER_SECRET_KEY').required().asString(),
+  SEND_MAIL: get('SEND_MAIL').required().asBool(),
 };
